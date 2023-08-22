@@ -1,0 +1,10 @@
+function tripleTrouble(one, two, three) {
+  let a = [];
+  for (let i = 0; i < one.length; i++) {
+    a.push(one[i]);
+    a.push(two[i]);
+    a.push(three[i]);
+  }
+  return a.join("");
+  //Solution
+}
