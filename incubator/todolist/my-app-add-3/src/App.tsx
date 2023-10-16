@@ -8,20 +8,13 @@ export type FilterType = "all" | "active" | "completed";
 
 function App() {
   let [tasks, setTasks] = useState([
-    { id: v1(), title: "React", isDone: false },
     { id: v1(), title: "React", isDone: true },
-    { id: v1(), title: "React", isDone: false },
+    { id: v1(), title: "React", isDone: true },
+    { id: v1(), title: "React", isDone: true },
     { id: v1(), title: "React", isDone: true },
   ]);
 
   let [filter, setFilter] = useState<FilterType>("all");
-
-  function changeChecked(id: string, isDone: boolean) {
-    let task = tasks.find((t) => id === t.id);
-    if (task) {
-      task.isDone = isDone;
-    }
-  }
 
   function addTask(title: string) {
     let newTask = { id: v1(), title: title, isDone: false };
@@ -45,16 +38,13 @@ function App() {
   }
 
   return (
-    <>
-      <Todolist
-        title="Todolist"
-        tasks={filteredTasks}
-        removeTask={removeTask}
-        filterTasks={filterTasks}
-        addTask={addTask}
-        changeChecked={changeChecked}
-      />
-    </>
+    <Todolist
+      title="Todolist"
+      tasks={filteredTasks}
+      removeTask={removeTask}
+      filterTasks={filterTasks}
+      addTask={addTask}
+    />
   );
 }
 

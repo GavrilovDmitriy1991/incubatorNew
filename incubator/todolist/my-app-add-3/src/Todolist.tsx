@@ -13,29 +13,28 @@ type PropsType = {
   removeTask: (id: string) => void;
   filterTasks: (filterType: FilterType) => void;
   addTask: (title: string) => void;
-  changeChecked: (id: string, isDone: boolean) => void;
 };
 
 export function Todolist(props: PropsType) {
   let [newTaskTitle, setNewTaskTitle] = useState("");
 
-  let onChangeValueHandler = (e: ChangeEvent<HTMLInputElement>) => {
+  let onChangeValueFunction = (e: ChangeEvent<HTMLInputElement>) => {
     setNewTaskTitle(e.currentTarget.value);
   };
 
-  let addTaskHanler = () => {
+  let addFunctionHandler = () => {
     props.addTask(newTaskTitle);
     setNewTaskTitle("");
   };
 
-  let onClickAddTaskHandler = (e: MouseEvent<HTMLButtonElement>) => {
-    addTaskHanler();
+  let onKeyAddTask = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      addFunctionHandler();
+    }
   };
 
-  let onKeyDownAddTaskHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      addTaskHanler();
-    }
+  let onClickAddTask = (e: MouseEvent<HTMLButtonElement>) => {
+    addFunctionHandler();
   };
 
   let filterAllFunction = () => {
@@ -54,21 +53,20 @@ export function Todolist(props: PropsType) {
       <input
         type="text"
         value={newTaskTitle}
-        onChange={onChangeValueHandler}
-        onKeyDown={onKeyDownAddTaskHandler}
+        onChange={onChangeValueFunction}
+        onKeyDown={onKeyAddTask}
       />
-      <button onClick={onClickAddTaskHandler}>+</button>
+      <button onClick={onClickAddTask}>+</button>
       <ul>
         {props.tasks.map((t) => {
-          let removeFunction = () => {
+          let removeTaskHandler = () => {
             props.removeTask(t.id);
           };
-
           return (
-            <li key={t.id}>
+            <li>
               <input type="checkbox" checked={t.isDone} />
               <span>{t.title}</span>
-              <button onClick={removeFunction}>x</button>
+              <button onClick={removeTaskHandler}>x</button>
             </li>
           );
         })}
