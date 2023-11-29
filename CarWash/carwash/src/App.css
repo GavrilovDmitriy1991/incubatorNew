@@ -1,0 +1,38 @@
+.filialName {
+  text-align: center;
+}
+
+.searchString {
+  width: 300px;
+}
+
+.buttonsBlock {
+  width: 400px;
+  margin: auto;
+}
+
+.createClientButton {
+  width: 130px;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+.addZatrati {
+  width: 130px;
+  margin-left: 135px;
+  margin-top: 5px;
+}
+
+.newCustomerInputs {
+  width: 500px;
+  margin: auto;
+}
+
+.newCustomerZagolovok {
+  text-align: center;
+}
+
+.newCustomerSecondInputs {
+  width: 430px;
+  margin-top: 5px;
+}
