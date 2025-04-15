@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normolize.css" />
-    <link rel="stylesheet" href="css/stile.css" />
+
+    <title>Marketing</title>
   </head>
   <body>
     <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
-            <a href="#" class="logo">
-              <img class="logo_img" src="images/logo.svg" alt="логотип" />
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="Логотип" />
             </a>
             <nav class="menu">
               <ul class="menu__list">
@@ -51,9 +53,9 @@
           <div class="header__content-inner">
             <h1 class="header__title">O...MARKETING</h1>
             <h4 class="header__subtitle">DIGITAL MARKETING AGENCY</h4>
-            <a href="#" class="header__icon">
-              <img src="images/mouse.svg" alt="mouse icon" />
-            </a>
+            <a href="#" class="header__icon"
+              ><img src="images/mouse.svg" alt="mouse icon"
+            /></a>
           </div>
         </div>
       </div>
@@ -81,7 +83,361 @@
         </div>
       </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <section class="expertise expertise__title">
+      <div class="container">
+        <h2 class="title">Our Expertise</h2>
+        <div class="expertise__inner">
+          <div class="expertise__info">
+            <div class="expertise__info-item">
+              BRANDING
+              <span style="width: calc(100% - 90%)">90%</span>
+            </div>
+            <div class="expertise__info-item">
+              DESIGN
+              <span style="width: calc(100% - 80%)">80%</span>
+            </div>
+            <div class="expertise__info-item">
+              DEVELOPMENT
+              <span style="width: calc(100% - 85%)">85%</span>
+            </div>
+          </div>
+          <div class="expertise__text">
+            <p>
+              В стратегию интернет-маркетинга входит создание имиджевой и
+              рекламной концепции, разработка контент-стратегии, распределение
+              использования различных каналов коммуникации.
+            </p>
+            <p>
+              Реализуем принятую стратегию, отслеживая промежуточные результаты,
+              и корректируя будущие действия с учетом изменений. Главной целью в
+              этом процессе для нас является конечный результат, а не следование
+              планам.
+            </p>
+          </div>
+        </div>
+        <div class="expertise__items">
+          <div class="expertise__item expertise__item--design">
+            <h4 class="expertise__item-title">GRAPHIC DESIGN</h4>
+            <p class="expertise__item-text">
+              Рекламный дизайн, дизайн упаковки, этикетки, листовок, каталогов,
+              разработка презентаций, дизайн выставочных стендов
+            </p>
+          </div>
+          <div class="expertise__item expertise__item--dev">
+            <h4 class="expertise__item-title">WEB DEVELOPMENT</h4>
+            <p class="expertise__item-text">
+              Разрабатываем веб сайты от концепции до реализации. Дизайн,
+              верстка, программирование и запуск сайт в сеть
+            </p>
+          </div>
+          <div class="expertise__item expertise__item--marketing">
+            <h4 class="expertise__item-title">MARKETING</h4>
+            <p class="expertise__item-text">
+              Разрабатываем маркетинговое и рекламное продвижение Вашего
+              продукта или услуги под ключ и на любой бюджет.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="magic">
+      <div class="container">
+        <div class="magic__inner">
+          <h2 class="title magic__title">Let’s make magic.</h2>
+          <div class="magic__text">
+            <p>
+              Маркетинговое агентство MGN: полный комплекс маркетинговых,
+              рекламных и дизайнерских услуг в Харькове и Украине: маркетинговые
+              исследования рынков, товаров, потребителей, планирование комплекса
+              маркетинга, реклама, проведение рекламных кампаний, брендинг,
+              рекламный дизайн, pr.
+            </p>
+            <p>
+              Нами накоплен немалый опыт работы в реальном бизнесе, в самых
+              различных отраслях – от недвижимости до аптечного и медицинского
+              бизнеса. Мы не просто беремся решать задачи наших клиентов, мы
+              сами вышли из бизнес-среды и понимаем суть бизнес-процессов.
+            </p>
+            <p>Мы говорим с бизнесом на одном языке!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__top">
+          <h2 class="title">Portfolio</h2>
+          <div class="portfolio__filter-btn">
+            <button class="portfolio__btn" data-filter="*">All</button>
+            <button class="portfolio__btn" data-filter=".category-a">
+              Branding
+            </button>
+            <button class="portfolio__btn" data-filter=".category-b">
+              Design photography
+            </button>
+            <button class="portfolio__btn" data-filter=".category-c">
+              photography
+            </button>
+            <button class="portfolio__btn" data-filter=".category-d">
+              illustration
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__content">
+        <div class="portfolio__item mix category-a">
+          <img src="images/portfolio/1.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-a">
+          <img src="images/portfolio/2.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="images/portfolio/3.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="images/portfolio/4.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="images/portfolio/5.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="images/portfolio/6.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="images/portfolio/7.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="images/portfolio/8.jpg" alt="portfolio images" />
+        </div>
+        <div class="portfolio__item mix category-d">
+          <img src="images/portfolio/9.jpg" alt="portfolio images" />
+        </div>
+      </div>
+      <a href="#" class="portfolio__add">VIEW MORE PROJECTS</a>
+      <blockquote class="blockquote">
+        «Неважно какую историю вы рассказываете, главное – сделайте своего
+        покупателя героем»
+        <span class="blockquote__author">Крис Броган</span>
+      </blockquote>
+      <div class="portfolio__video">
+        <a href="#" class="portfolio__video-link">
+          <img src="images/play.svg" alt="play-icon" />
+        </a>
+      </div>
+      <div class="container">
+        <div class="portfolio__numbers">
+          <h5 class="portfolio__numbers-item">
+            305
+            <span>Web Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            220
+            <span>Logo Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            52
+            <span>Print Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            88
+            <span>Mobile Apps</span>
+          </h5>
+        </div>
+      </div>
+    </section>
+    <section class="slider-blog">
+      <div class="container">
+        <div class="slider-blog__inner">
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a href="#" class="slider-blog__item-link">
+              <h3 class="slider-blog__item-title">
+                Анимированный логотип - тренд или необходимость?
+              </h3>
+            </a>
+            <p class="slider-blog__item-descr">
+              Что представляет собой анимированный логотип, и в чем его
+              преимущества? И почему это модно? Давайте обсудим.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <h2 class="title team__title">Our Team</h2>
+        <div class="team__items">
+          <div class="team__item">
+            <img src="images/team-1.jpg" alt="" />
+            <h6 class="team__name">МАКС</h6>
+            <p class="team__position">SEO</p>
+          </div>
+          <div class="team__item">
+            <img src="images/team-2.jpg" alt="" />
+            <h6 class="team__name">АНЯ</h6>
+            <p class="team__position">Founder</p>
+          </div>
+          <div class="team__item">
+            <img src="images/team-3.jpg" alt="" />
+            <h6 class="team__name">МИЛА</h6>
+            <p class="team__position">Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <h2 class="title pricing__title">Pricing Plans</h2>
+        <div class="pricing__items">
+          <ul class="pricing__item">
+            <li class="pricing__item-name">Basic</li>
+            <li class="pricing__item-num"><sup>$</sup>290</li>
+            <li>1 Logo Design</li>
+            <li>1 Website Design</li>
+            <li>1 Domain Free</li>
+            <li>3 Month License</li>
+            <li>1 GB Storage</li>
+            <li><a class="pricing__item-link" href="#">CHOOSE PLAN</a></li>
+          </ul>
+          <ul class="pricing__item">
+            <li class="pricing__item-name">Starter</li>
+            <li class="pricing__item-num"><sup>$</sup>500</li>
+            <li>2 Logo Design</li>
+            <li>2 Website Design</li>
+            <li>1 Domain Free</li>
+            <li>6 Month License</li>
+            <li>1 GB Storage</li>
+            <li><a class="pricing__item-link" href="#">CHOOSE PLAN</a></li>
+          </ul>
+          <ul class="pricing__item">
+            <li class="pricing__item-name">Professional</li>
+            <li class="pricing__item-num"><sup>$</sup>1500</li>
+            <li>3 Logo Design</li>
+            <li>3 Website Design</li>
+            <li>2 Domain Free</li>
+            <li>12 Month License</li>
+            <li>2 GB Storage</li>
+            <li><a class="pricing__item-link" href="#">CHOOSE PLAN</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="clients">
+      <div class="container">
+        <ul class="clients__list">
+          <li><img src="images/client/1.png" alt="" /></li>
+          <li><img src="images/client/2.png" alt="" /></li>
+          <li><img src="images/client/3.png" alt="" /></li>
+          <li><img src="images/client/4.png" alt="" /></li>
+          <li><img src="images/client/5.png" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+    <section class="connection">
+      <div class="container">
+        <h2 class="title connection__title">Get in Touch</h2>
+        <form class="form">
+          <input type="text" placeholder="ИМЯ" />
+          <input type="text" placeholder="EMAIL" />
+          <textarea placeholder="ВАШЕ СООБЩЕНИЕ"></textarea>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <a href="#" class="footer__logo">
+          <img src="images/logo-white.svg" alt="Логотип" />
+        </a>
+        <ul class="footer__social">
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">FACEBOOK</a>
+          </li>
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">TWITTER</a>
+          </li>
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">GOOGLE+</a>
+          </li>
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">BEHANCE</a>
+          </li>
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">DRIBBLE</a>
+          </li>
+          <li class="footer__social-list">
+            <a href="#" class="footer__social-link">INSTAGRAM</a>
+          </li>
+        </ul>
+        <div class="footer__contact">
+          <adress class="adress">Украина, Харьков ул. Тобольская, 63</adress>
+          <a class="phone" href="tel:+3806765252222">(38067) 65 252 222</a>
+          <a class="email" href="mailto:info@mail.com">info@mail.com</a>
+        </div>
+        <a class="go-top" href="#"><img src="images/Shape.svg" alt="#" /> </a>
+      </div>
+      <div class="footer__copy">
+        <p>@2020 O...Marketing</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/mixitup.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

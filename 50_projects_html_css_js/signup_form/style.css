@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Quicksand, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100rem;
+  height: 70rem;
+  background-color: #eee;
+  border-radius: 3rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
